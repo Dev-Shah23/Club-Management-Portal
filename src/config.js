@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const connect = mongoose.connect("mongodb://localhost:27017/Login-tut");
+const connect = mongoose.connect("mongodb://localhost:27017/Club");
 
 // Check database connected or not
 connect.then(() => {
@@ -18,7 +18,14 @@ const Loginschema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+        },
+    role: {
+        type : String,
+        enum: ['Student','Club','Authority'],
+        required: true
     }
+    
+    
 });
 
 // collection part
