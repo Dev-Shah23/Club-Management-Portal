@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+#maindiv {
+  display: flex;
+  height: 34px;
+  width: 1400px;
+  background: #a6c1ee;
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  padding-bottom: 34px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+p {
+  padding-top: 0;
+  font-size: 20px;
+}
+
+li {
+  font-size: 24px;
+  padding-right: 100px;
+}
+
+.subdiv {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  display: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+#singupid:hover .asignup {
+  display: block;
+}
+
+#loginid:hover .alogin {
+  display: block;
+}
