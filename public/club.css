@@ -1,0 +1,125 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.club-dashboard {
+  background: #ffffff;
+  width: 1000px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.club-name {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.8rem;
+  color: #ff4d6d;
+  font-weight: 800;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.button-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.action-box {
+  flex: 1 1 140px;
+  height: 80px;
+  background: #eef5ff;
+  border: 2px dashed #6495ed;
+  border-radius: 12px;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.1rem;
+  color: #305fa2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.action-box:hover {
+  background-color: #dceaff;
+}
+
+.section {
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.request-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.request-form input[type="text"],
+.request-form input[type="date"],
+.request-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.request-form textarea {
+  resize: vertical;
+}
+
+.request-form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.request-form button:hover {
+  background-color: #357ac8;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  width: 98%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/club.css" />
+  </head>
+  <body>
+    <!-- User Info + Logout -->
+    <div style="text-align: right; margin: 10px;">
+      Logged in as <%= user.name %> (<%= user.role %>) |
+      <a href="/logout">Logout</a>
+    </div>
+
+    <!-- Main Club Dashboard -->
+    <div class="club-dashboard">
+      <div class="club-name"><%= user.name %> Dashboard</div>
+
+      <!-- Action Buttons -->
+      <div class="button-grid">
+        <div class="action-box" onclick="window.location.href='/club/add-event'">
+          + Add Event
+        </div>
+        <div class="action-box" onclick="window.location.href='/club/add-recruitment'">
+          + Add Recruitment
+        </div>
+        <div class="action-box" onclick="window.location.href='/club/request-permission'">
+          + Request Permission
+        </div>
+      </div>
+
+      <!-- Upcoming Events (static for now) -->
+      <div class="section">
+        <h2>Upcoming Events</h2>
+        <ul class="events-list">
+          <li><strong>ISTE Hackathon</strong><span>Apr 27, 2025</span></li>
+          <li><strong>AURORA Tech Week</strong><span>May 10, 2025</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECRUITMENT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/studrecruitment.css" />
+  </head>
+  <body>
+    <button id="home" onclick="window.location.href='/dashboard/student'">
+      Return To Home
+    </button>
+    <h1>RECRUITMENTS</h1>
+
+    <div class="event-details-wrapper">
+      <form class="event-box" action="#">
+        <label for="eventname">Role:</label>
+        <input
+          type="text"
+          id="eventname"
+          readonly
+          value="eg. working committee"
+          class="eventname"
+        />
+      </form>
+
+      <form class="event-box" action="#">
+        <label for="aboutevent">Skills Required:</label>
+        <textarea id="aboutevent" class="aboutevent" readonly>
+          eg. webD,design,etc.
+        </textarea>
+      </form>
+
+      <form class="event-box" action="#">
+        <label>Deadline:</label>
+        <input type="date" readonly class="date" />
+      </form>
+
+      <form class="organized-by" action="#">
+        <label for="organizer">Recruitment For:</label>
+        <input type="text" id="organizer" readonly value="ISTE Manipal" />
+      </form>
+
+      <div class="btn-wrapper">
+        <button type="button">Apply</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLUBS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/studclub.css" />
+  </head>
+  <body>
+    <button id="home" onclick="window.location.href='/dashboard/student'">
+      Return To Home
+    </button>
+
+    <div class="grid-container">
+      <!-- ISTE Club -->
+      <div class="club-box">
+        <div class="club-logo"><img src="/photos/ISTElogo.jpeg" alt="ISTE" /></div>
+        <div class="club-info">
+          <h2>ISTE Manipal</h2>
+          <button class="more-btn" onclick="toggleDetails('iste-details')">
+            More
+          </button>
+        </div>
+        <div class="club-details" id="iste-details">
+          <p>
+            <strong>About:</strong> ISTE Manipal is a premier tech and
+            innovation club, hosting events, workshops, and hackathons.
+          </p>
+          <p><strong>Focus:</strong> Coding, innovation, and leadership.</p>
+        </div>
+      </div>
+
+      <!-- MOSS Club -->
+      <div class="club-box">
+        <div class="club-logo"><img src="/photos/moss logo.jpeg" alt="MOSS" /></div>
+        <div class="club-info">
+          <h2>MOSS</h2>
+          <button class="more-btn" onclick="toggleDetails('moss-details')">
+            More
+          </button>
+        </div>
+        <div class="club-details" id="moss-details">
+          <p>
+            <strong>About:</strong> MOSS is the Open Source club of MIT Manipal.
+          </p>
+          <p>
+            <strong>Focus:</strong> Open Source development, Git/GitHub, and
+            real-world projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="club-box">
+        <div class="club-logo">
+          <img src="/photos/acm_manipal_logo.jpeg" alt="ACM" />
+        </div>
+        <div class="club-info">
+          <h2>ACM Manipal</h2>
+          <a href="#" class="more-btn">More</a>
+        </div>
+      </div>
+
+      <div class="club-box">
+        <div class="club-logo">
+          <img src="/photos/embs_ieeemanipal_logo.jpeg" alt="IEEE EMBS" />
+        </div>
+        <div class="club-info">
+          <h2>IEEE EMBS</h2>
+          <a href="#" class="more-btn">More</a>
+        </div>
+      </div>
+
+      <div class="club-box">
+        <div class="club-logo">
+          <img src="/photos/brahmaDhwani.jpeg" alt="BrahmaDhwani" />
+        </div>
+        <div class="club-info">
+          <h2>BrahmaDhwani</h2>
+          <a href="#" class="more-btn">More</a>
+        </div>
+      </div>
+
+      <div class="club-box">
+        <div class="club-logo">
+          <img src="/photos/manipal_information_security_team_logo.jpeg" alt="MIST" />
+        </div>
+        <div class="club-info">
+          <h2>MIST</h2>
+          <a href="#" class="more-btn">More</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display =
+          details.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>

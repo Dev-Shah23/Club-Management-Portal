@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/admin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+    <main class="grid-container">
+
+      <!-- Pending Permissions -->
+      <section class="card">
+        <h2>Pending Permissions</h2>
+
+        <!-- ✅ Dummy hardcoded form #1 -->
+        <form class="request-form">
+          <label>Club Name</label>
+          <input type="text" value="ISTE" readonly />
+          <label>Reason</label>
+          <input type="text" value="Hackathon Event" readonly />
+          <label>Date</label>
+          <input type="date" value="2025-07-01" readonly />
+          <div class="btn-group">
+            <button type="submit" class="approve">Approve</button>
+            <button type="submit" class="reject">Reject</button>
+            <button type="submit" class="changes">Ask for Changes</button>
+          </div>
+        </form>
+
+        <!-- ✅ Dummy hardcoded form #2 -->
+        <form class="request-form">
+          <label>Club Name</label>
+          <input type="text" value="MOSS" readonly />
+          <label>Reason</label>
+          <input type="text" value="Workshop on Git" readonly />
+          <label>Date</label>
+          <input type="date" value="2025-07-10" readonly />
+          <div class="btn-group">
+            <button type="submit" class="approve">Approve</button>
+            <button type="submit" class="reject">Reject</button>
+            <button type="submit" class="changes">Ask for Changes</button>
+          </div>
+        </form>
+
+        <!-- ✅ Dynamic entries from DB -->
+        <% if (requests && requests.length > 0) { %>
+          <% requests.forEach(request => { %>
+            <form class="request-form" method="POST" action="/authority/action/<%= request._id %>">
+              <label>Club Name</label>
+              <input type="text" value="<%= request.clubName %>" readonly />
+
+              <label>Reason</label>
+              <input type="text" value="<%= request.eventTitle %>" readonly />
+
+              <label>Description</label>
+              <textarea readonly><%= request.description %></textarea>
+
+              <label>Date</label>
+              <input type="text" value="<%= request.date.toISOString().split('T')[0] %>" readonly />
+
+              <label>Remarks (Optional)</label>
+              <input type="text" name="remarks" placeholder="Enter remarks if any..." />
+
+              <div class="btn-group">
+                <button type="submit" name="action" value="approved" class="approve">Approve</button>
+                <button type="submit" name="action" value="rejected" class="reject">Reject</button>
+                <button type="submit" name="action" value="changes_requested" class="changes">Ask for Changes</button>
+              </div>
+            </form>
+          <% }); %>
+        <% } %>
+      </section>
+
+      <!-- Recent Events -->
+      <section class="card">
+        <h2>Recent Events</h2>
+        <form class="log-form">
+          <input type="text" readonly value="TechTalk – ACM" />
+          <input type="text" readonly value="GameJam – MOSS" />
+          <input type="text" readonly value="Data Dive – CSI" />
+        </form>
+      </section>
+
+      <!-- Activity Logs -->
+      <section class="card">
+        <h2>Activity Logs</h2>
+        <form class="log-form">
+          <input type="text" readonly value="ISTE added a new event" />
+          <input type="text" readonly value="MOSS updated recruitment post" />
+          <input type="text" readonly value="Admin rejected one permission" />
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>

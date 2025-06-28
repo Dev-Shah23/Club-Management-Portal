@@ -1,34 +1,30 @@
 const mongoose = require('mongoose');
-const connect = mongoose.connect("mongodb://localhost:27017/Club");
 
-// Check database connected or not
-connect.then(() => {
+// Basic DB connection
+const connectDB = async () => {
+  try {
+    await mongoose.connect("mongodb://localhost:27017/Club", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    });
     console.log("Database Connected Successfully");
-})
-.catch(() => {
-    console.log("Database cannot be Connected");
-})
+  } catch (err) {
+    console.error("Database connection failed:", err.message);
+    process.exit(1);
+  }
+};
 
-// Create Schema
+// Simple user schema (no password hashing, relaxed validation)
 const Loginschema = new mongoose.Schema({
-    name: {
-        type:String,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-        },
-    role: {
-        type : String,
-        enum: ['Student','Club','Authority'],
-        required: true
-    }
-    
-    
+  name: String,
+  password: String,
+  role: String,
+  email: String
 });
 
-// collection part
-const collection = new mongoose.model("users", Loginschema);
+const User = mongoose.model("User", Loginschema);
 
-module.exports = collection;
+module.exports = {
+  connectDB,
+  User
+};

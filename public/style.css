@@ -17,6 +17,20 @@ h2 {
     margin-bottom: 30px;
   }
 
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+}
+
 .form-container {
     width: 300px;
     margin: 0 auto;
@@ -42,6 +56,25 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 3px;
   }
+
+  .form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #1e1e2f; /* dark dropdown background */
+  color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #472dbb;
+  box-shadow: 0 0 5px rgba(71, 45, 187, 0.5);
+}
 
   .submit-btn {
     display: block;

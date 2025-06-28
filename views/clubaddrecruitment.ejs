@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Recruitment</title>
+    <link rel="stylesheet" href="/club.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h2>Add Recruitment Notice</h2>
+      <form class="request-form" action="/club/add-recruitment" method="POST">
+        <label>
+          Role:
+          <input
+            type="text"
+            name="role"
+            placeholder="e.g. Working Committee"
+            required
+          />
+        </label>
+
+        <label>
+          Skills Required:
+          <textarea
+            name="skills"
+            rows="3"
+            placeholder="e.g. Design, Web Dev, Video Editing..."
+            required
+          ></textarea>
+        </label>
+
+        <label>
+          Application Deadline:
+          <input type="date" name="deadline" required />
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

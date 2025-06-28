@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permission Requests</title>
+    <link rel="stylesheet" href="/club.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h2>Permission Requests</h2>
+      <form class="request-form" action="/club/request-permission" method="POST">
+        <label>
+          Request Title:
+          <input
+            type="text"
+            name="eventTitle"
+            placeholder="e.g. Book Venue"
+            required
+          />
+        </label>
+
+        <label>
+          Description:
+          <textarea
+            name="description"
+            rows="3"
+            placeholder="Explain your request..."
+            required
+          ></textarea>
+        </label>
+
+        <label>
+          Date:
+          <input type="date" name="date" required />
+        </label>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -16,14 +16,16 @@
             <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
           </div>
           <div class="form-group">
-            <label for="password">password:</label>
-            <input type="password" id="password" name="password" placeholder="password" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
           </div>
-          <select name="role" required>
+          <div class = "form-group select-wrapper">
+            <select name="role" required>
             <option value = "Student">Student</option>
             <option value = "Club">Club</option>
             <option value = "Authority">Authority</option>
           </select>
+          </div>          
           <button type="submit" class="submit-btn">Submit</button>
         </form>
         <p>Don't have an account? <a class="link" href="/">Login</a></p>

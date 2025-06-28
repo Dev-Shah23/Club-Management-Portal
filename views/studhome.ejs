@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stud.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <p onclick="window.location.href='/student/clubs'">CLUBS</p>
+      <p onclick="window.location.href='/student/recruitments'">RECRUITMENTS</p>
+      <p onclick="window.location.href='/student/events'">EVENTS & more</p>
+      <p id="logout">LOGOUT</p>
+    </div>
+
+    <div id="featuredclub">
+      <h1>FEATURED CLUBS</h1>
+      <div class="club-container">
+        <div class="club-box">
+          <div class="club-logo">
+            <img src="/photos/ISTElogo.jpeg" alt="ISTE Logo" />
+          </div>
+          <div class="club-info"><h2>ISTE Manipal</h2></div>
+        </div>
+        <div class="club-box">
+          <div class="club-logo">
+            <img src="/photos/moss logo.jpeg" alt="MOSS Logo" />
+          </div>
+          <div class="club-info"><h2>MOSS</h2></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="featuredevent">
+      <h1>FEATURED EVENTS</h1>
+      <div class="event-container">
+        <div class="event-details-wrapper">
+          <form>
+            <label>Event Name:</label>
+            <input
+              type="text"
+              readonly
+              value="Hackathon 2025"
+              class="eventname"
+            />
+          </form>
+          <form>
+            <label>About the Event:</label>
+            <textarea class="aboutevent" readonly>
+24-hour coding challenge to build real-world solutions.
+            </textarea>
+          </form>
+          <form>
+            <label>Duration:</label>
+            <input type="date" readonly class="date" /> to
+            <input type="date" readonly class="date" />
+          </form>
+          <form>
+            <label>Organized by:</label>
+            <input type="text" readonly value="ISTE Manipal" />
+          </form>
+        </div>
+
+        <div class="event-details-wrapper">
+          <form>
+            <label>Event Name:</label>
+            <input type="text" readonly value="Tech Talk" class="eventname" />
+          </form>
+          <form>
+            <label>About the Event:</label>
+            <textarea class="aboutevent" readonly>
+Insights from leading industry experts on AI & DevOps.
+            </textarea>
+          </form>
+          <form>
+            <label>Duration:</label>
+            <input type="date" readonly class="date" /> to
+            <input type="date" readonly class="date" />
+          </form>
+          <form>
+            <label>Organized by:</label>
+            <input type="text" readonly value="MOSS" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

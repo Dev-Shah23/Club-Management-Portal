@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+}
+
+#home {
+  width: 120px;
+  height: 40px;
+  background-color: #eb5656;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#home:hover {
+  background-color: #f50404;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.club-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.club-box:hover {
+  transform: scale(1.02);
+}
+
+.club-logo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+.club-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.club-info h2 {
+  margin: 10px 0;
+  font-size: 2.2rem;
+  font-family: "Caveat", cursive;
+  color: #f1f1f1;
+}
+
+.more-btn {
+  text-decoration: none;
+  background-color: #043d7b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.more-btn:hover {
+  background-color: #0056d2;
+}
+
+.club-details {
+  display: none;
+  background-color: #222;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #ddd;
+  font-family: "Poppins", sans-serif;
+}
