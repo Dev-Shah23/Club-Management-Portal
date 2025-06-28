@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="adminhome.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+    <main class="grid-container">
+      <section class="card">
+        <h2>Pending Permissions</h2>
+
+        <form class="request-form">
+          <label>Club Name</label>
+          <input type="text" name="clubName" value="ISTE" readonly />
+
+          <label>Reason</label>
+          <input type="text" name="reason" value="Hackathon Event" readonly />
+
+          <label>Date</label>
+          <input type="date" name="date" id="" />
+
+          <div class="btn-group">
+            <button type="submit" name="action" value="approve" class="approve">
+              Approve
+            </button>
+            <button type="submit" name="action" value="reject" class="reject">
+              Reject
+            </button>
+            <button type="submit" name="action" value="changes" class="changes">
+              Ask for Changes
+            </button>
+          </div>
+        </form>
+
+        <form class="request-form">
+          <label>Club Name</label>
+          <input type="text" name="clubName" value="ISTE" readonly />
+
+          <label>Reason</label>
+          <input type="text" name="reason" value="Hackathon Event" readonly />
+
+          <label>Date</label>
+          <input type="date" name="date" id="" />
+
+          <div class="btn-group">
+            <button type="submit" name="action" value="approve" class="approve">
+              Approve
+            </button>
+            <button type="submit" name="action" value="reject" class="reject">
+              Reject
+            </button>
+            <button type="submit" name="action" value="changes" class="changes">
+              Ask for Changes
+            </button>
+          </div>
+        </form>
+
+        <form class="request-form">
+          <label>Club Name</label>
+          <input type="text" name="clubName" value="MOSS" readonly />
+
+          <label>Reason</label>
+          <input type="text" name="reason" value="Workshop on Git" readonly />
+
+          <div class="btn-group">
+            <button type="submit" name="action" value="approve" class="approve">
+              Approve
+            </button>
+            <button type="submit" name="action" value="reject" class="reject">
+              Reject
+            </button>
+            <button type="submit" name="action" value="changes" class="changes">
+              Ask for Changes
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Recent Events</h2>
+        <form class="log-form">
+          <input type="text" readonly value="TechTalk – ACM" />
+          <input type="text" readonly value="GameJam – MOSS" />
+          <input type="text" readonly value="Data Dive – CSI" />
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Activity Logs</h2>
+        <form class="log-form">
+          <input type="text" readonly value="ISTE added a new event" />
+          <input type="text" readonly value="MOSS updated recruitment post" />
+          <input type="text" readonly value="Admin rejected one permission" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

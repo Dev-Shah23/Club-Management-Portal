@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f8fc;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.request-form {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-form input {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  width: 100%;
+}
+
+.request-form input {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #fff;
+}
+
+.approve {
+  background-color: #4caf50;
+}
+.reject {
+  background-color: #f44336;
+}
+.changes {
+  background-color: #ff9800;
+}
+
+button:hover {
+  filter: brightness(95%);
+}

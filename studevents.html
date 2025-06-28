@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="studevents.css" />
+  </head>
+  <body>
+    <button id="home" onclick="window.location.href='studhome.html'">
+      Return To Home
+    </button>
+    <h1>EVENTS</h1>
+
+    <div class="event-details-wrapper">
+      <form class="event-box" action="#">
+        <label for="eventname">Event Name:</label>
+        <input
+          type="text"
+          id="eventname"
+          readonly
+          value="Hackathon 2025"
+          class="eventname"
+        />
+      </form>
+
+      <form class="event-box" action="#">
+        <label for="aboutevent">About the Event:</label>
+        <textarea id="aboutevent" class="aboutevent" readonly>
+Join us for a 24-hour coding sprint where innovation meets execution.
+        </textarea>
+      </form>
+
+      <form class="event-box" action="#">
+        <label>Duration:</label>
+        <input type="date" readonly class="date" />
+        <span>to</span>
+        <input type="date" readonly class="date" />
+      </form>
+
+      <form class="organized-by" action="#">
+        <label for="organizer">Organized by:</label>
+        <input type="text" id="organizer" readonly value="ISTE Manipal" />
+      </form>
+
+      <div class="btn-wrapper">
+        <button type="button">Register</button>
+      </div>
+    </div>
+  </body>
+</html>
