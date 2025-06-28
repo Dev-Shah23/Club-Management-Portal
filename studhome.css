@@ -6,35 +6,40 @@ body {
   margin: 0;
   padding: 20px;
   font-family: "Poppins", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #111;
+  color: #f9f9f9;
 }
 
 #nav {
   display: flex;
   justify-content: space-around;
-  background-color: #07f4c5;
+  background-color: #222;
   height: 45px;
   align-items: center;
   margin-bottom: 30px;
   border-radius: 8px;
   font-weight: 600;
+  border: 1px solid #555;
 }
 
 #nav p {
   margin: 0;
   cursor: pointer;
   font-size: 1rem;
-  color: #222;
+  color: #f9f9f9;
+}
+
+#nav p:hover {
+  text-decoration: underline;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #333;
+  color: #fff;
 }
 
-/* Featured Clubs */
 #featuredclub {
   margin-bottom: 40px;
 }
@@ -48,13 +53,14 @@ h1 {
 
 .club-box {
   width: 48%;
-  background-color: #ffe9e3;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
 }
 
 .club-logo img {
@@ -62,15 +68,15 @@ h1 {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid #888;
 }
 
 .club-info h2 {
   margin-top: 15px;
   font-size: 1.4rem;
-  color: #444;
+  color: #fff;
 }
 
-/* Featured Events */
 #featuredevent {
   margin-bottom: 30px;
 }
@@ -84,10 +90,11 @@ h1 {
 
 .event-details-wrapper {
   width: 48%;
-  background-color: #ffe9e3;
+  background-color: #1a1a1a;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #444;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
 }
 
 form {
@@ -98,21 +105,28 @@ form {
 
 label {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: #444;
+  font-weight: 600;
+  color: #ddd;
   margin-bottom: 4px;
 }
 
 input,
 textarea {
-  background-color: #fff9f6;
-  border: 1px solid #ccc;
+  background-color: #000;
+  border: 1px solid #555;
   border-radius: 6px;
   padding: 8px 10px;
   font-family: "Poppins", sans-serif;
   font-size: 0.95rem;
-  color: #333;
+  color: #f9f9f9;
   resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3399ff;
+  background-color: #111;
 }
 
 .eventname {

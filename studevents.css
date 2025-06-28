@@ -1,8 +1,25 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  color: #f9f9f9;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
 .event-details-wrapper {
   height: 390px;
   width: 100%;
   border-radius: 6px;
-  background-color: #ffe9e3;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  padding: 20px;
 }
 
 form > input {
@@ -13,7 +30,16 @@ form > input {
   text-align: center;
   height: 25px;
   border-radius: 6px;
-  border: none;
+  border: 1px solid #555;
+  background-color: #000;
+  color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3399ff;
+  background-color: #111;
 }
 
 .date {
@@ -22,17 +48,27 @@ form > input {
 
 label {
   margin-left: 9px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ddd;
+  margin-bottom: 5px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .eventname {
   margin-top: 9px;
 }
+
 input,
 textarea {
-  background-color: #fff9f6;
+  background-color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 0.95rem;
-  color: #333;
+  color: #f9f9f9;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 8px 10px;
 }
 
 .aboutevent {
@@ -40,22 +76,10 @@ textarea {
   width: 95%;
   padding: 10px;
   resize: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.95rem;
-  color: #333;
-  background-color: #fff9f6;
   text-align: left;
   vertical-align: top;
-  border: none;
-  border-radius: 6px;
   overflow-y: auto;
   margin: 5px 10px;
-}
-
-h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
 }
 
 button {
@@ -64,29 +88,23 @@ button {
   margin-left: 9px;
   width: 1452px;
   height: 30px;
-  background-color: #7768ea;
-  color: #fff9f6;
+  background-color: #007bff;
+  color: #fff;
   border-radius: 4px;
 }
 
 button:hover {
-  background-color: #0303f4;
+  background-color: #0056d2;
   cursor: pointer;
-}
-
-label {
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: #444;
-  margin-bottom: 5px;
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #home {
   width: 100px;
   height: 40px;
   background-color: #eb5656;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
 }
 
 #home:hover {
